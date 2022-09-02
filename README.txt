@@ -1,6 +1,20 @@
+Il progetto è facilmente ampliabile a nuovi datasets eseguendo i seguenti passaggi:
+    1) Aggiungere alla cartella Datasets il nuovo set.
+    2) Aggiungere un metodo nel main che renda conforme il set alla classificazione binaria (questo
+       consiste nell'avere come etichette i numeri -1 e 1 che stanno ad indicare la classe negativa e positiva).
+       All'interno del metodo creare un oggetto di tipo Test.
+    3) Eseguire "test.run_test_get_result(max_iteration, n_random_choice)" all'interno del metodo.
+
+*******************************************************************************************************************
+
+Per replicare i risultati illustrati nella relazione eseguire il main ed indicare:
+    - numero massimo di iterazioni: 200
+    - numero di valori selezionati in modo random per la selezione della soglia: 50
+Per ciascun test.
 I datasets utilizzati sono reperibili tramite i link nella relazione allegata al progetto.
-Nella relazione è descritto come replicare i risultati discussi.
-In questo file viene descritto con maggior precisione l''implementazione del progetto.
+
+*******************************************************************************************************************
+
 All'interno del progetto sono presenti tre file:
 
 1) main.py
@@ -50,16 +64,4 @@ All'interno del progetto sono presenti tre file:
             metodo utilizzato per eseguire la predizione considerando tutte le ipotesi create fino a
             quel momento. La predizione sarà in accordo con la predizione dell'algoritmo Adaboost cioè
             sarà il segno della somma delle predizioni pesata rispetto al peso dell'ipotesi.
-
-Il progetto è facilmente ampliabile a nuovi datasets eseguendo i seguenti passaggi:
-    1) Aggiungere alla cartella Datasets il nuovo set.
-    2) Aggiungere un metodo nel main che renda conforme il set alla classificazione binaria (questo
-       consiste nell'avere come etichette i numeri -1 e 1 che stanno ad indicare la classe negativa e positiva).
-       All'interno del metodo creare un oggetto di tipo Test.
-    3) Eseguire "test.run_test_get_result(max_iteration, n_random_choice)" all'interno del metodo.
-
-Per replicare i risultati illustrati nella relazione eseguire il main ed indicare:
-    - numero massimo di iterazioni: 200
-    - numero di valori selezionati in modo random per la selezione della soglia: 50
-Per ciascun test.
 
